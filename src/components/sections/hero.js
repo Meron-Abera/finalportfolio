@@ -3,6 +3,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-regular-svg-icons';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -44,10 +46,47 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+  .scroll-down-button {
+    background-color: transparent;
+    color: var(--slate);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+
+    svg {
+      margin-right: 0;
+      width: 20px;
+      height: 20px;
+      animation: bounce 2s infinite;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
 `;
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -59,20 +98,12 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hello, this is</h1>;
+  const two = <h2 className="big-heading">Nathnael Mekonnen.</h2>;
+  const three = <h3 className="big-heading">I design and develop Software</h3>;
   const four = (
     <>
-      <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
-      </p>
+      <p>I design and program software solutions to bring ideas to reality. </p>
     </>
   );
   const five = (
@@ -87,6 +118,17 @@ const Hero = () => {
 
   const items = [one, two, three, four, five];
 
+  const handleScrollDown = () => {
+    const workSection = document.getElementById('work-section');
+    if (workSection) {
+      window.scrollTo({
+        top: workSection.offsetTop,
+        behavior: 'smooth',
+      });
+      setShowScrollButton(false);
+    }
+  };
+
   return (
     <StyledHeroSection>
       {prefersReducedMotion ? (
@@ -94,6 +136,11 @@ const Hero = () => {
           {items.map((item, i) => (
             <div key={i}>{item}</div>
           ))}
+          {showScrollButton && (
+            <button className="scroll-down-button" onClick={handleScrollDown}>
+              <FontAwesomeIcon icon={faChevronDown} style={{ color: '#d69e9e' }} />
+            </button>
+          )}
         </>
       ) : (
         <TransitionGroup component={null}>
@@ -103,6 +150,16 @@ const Hero = () => {
                 <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
               </CSSTransition>
             ))}
+          {showScrollButton && (
+            <CSSTransition key="scroll-button" classNames="fadeup" timeout={loaderDelay}>
+              <button
+                className="scroll-down-button"
+                onClick={handleScrollDown}
+                style={{ transitionDelay: '600ms' }}>
+                <FontAwesomeIcon icon={faChevronDown} style={{ color: '#d69e9e' }} />
+              </button>
+            </CSSTransition>
+          )}
         </TransitionGroup>
       )}
     </StyledHeroSection>

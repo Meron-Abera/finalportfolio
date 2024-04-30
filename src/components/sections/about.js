@@ -125,7 +125,20 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Python',
+    'Flask',
+    'JavaScript (ES6+)',
+    'TypeScript',
+    'React Js',
+    'Next Js',
+    'Node Js',
+    'Express Js',
+    'SQL/PostgresSQL',
+    'AWS',
+    'Git',
+    'Github',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +148,27 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hi there! I am Nathnael (Nathe). I am a computer science student who likes to solve
+              problems in real-life. Since I joined high school in 2015, I started to learn
+              programming, and I worked on different projects from hybrid designs at earlier stages
+              to full-stack web applications, machine learning pipelines, and data analytics
+              projects.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
+              Currently I'm a senior at the most innovative university by{' '}
+              <a href="https://www.wuri.world/2023-global-top-100">WURI</a> 2023{' '}
+              <a href="https://www.minerva.edu/">- Minerva University</a> where I am studying
+              Computer Science concentrating on Software Engineering and Applied Data Science. I
+              also work as a Software Engineer intern at the <strong>#1 CRM platform </strong>{' '}
+              <a href="https://www.salesforce.com">
+                <strong>Salesforce</strong>
               </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              and as a Full Stack Developer at <a href="https://www.tamacares.com/"> TamaCares</a>{' '}
+              where I am responsible for developing and maintaining the company's web application
+              from scratch.
             </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>The technologies I’ve used and learned in recent projects</p>
           </div>
 
           <ul className="skills-list">
@@ -173,7 +180,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/nathnael.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
