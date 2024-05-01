@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'JPMC RealTime Trade Visualizer'
-cover: './Forage_screenshot.jpeg'
+cover: './Forage_screenshot.png'
 github: 'https://github.com/Nathnaelc/JPMC-task-3-by-NM'
 external: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_wSmT7jZCaZTHxRSYA_1669348687658_completion_certificate.pdf'
 tech:

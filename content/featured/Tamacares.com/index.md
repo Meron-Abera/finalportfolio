@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'TamaCares'
-cover: './tamacares_screenshot.jpeg'
+cover: './tamacares_screenshot.png'
 github: 'https://github.com/Tamahealth/about-Tamacares'
 external: 'https://www.tamacares.com/'
 tech:

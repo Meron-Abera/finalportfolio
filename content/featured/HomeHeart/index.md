@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'HomeHeart'
-cover: './homeheart_screenshot.jpeg'
+cover: './homeheart_screenshot.png'
 external: 'https://homeheartui-wi1z.onrender.com/#/login'
 cta: 'fuck.com'
 github: 'https://www.newline.co/courses/build-a-spotify-connected-app'
