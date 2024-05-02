@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -55,7 +55,7 @@ const StyledHeroSection = styled.section`
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
-    margin-top: 100px;
+    margin-top: 200px;
 
     &:hover {
       transform: translateY(5px);
@@ -89,6 +89,7 @@ const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const workSectionRef = useRef(null);
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -104,17 +105,27 @@ const Hero = () => {
   const three = <h3 className="big-heading">I design and develop Software</h3>;
   const four = (
     <>
-      <p>I design and program software solutions to bring ideas to reality. </p>
+      <p>
+        I design and program software solutions to bring ideas to reality. Currently, I work at{' '}
+        <a href="https://www.salesforce.com" target="_blank" rel="noreferrer">
+          Salesforce
+        </a>{' '}
+        as a Software Engineering Intern and I am also a lead developer at{' '}
+        <strong>TamaCares</strong> building{' '}
+        <a href="https://www.tamacares.com" target="_blank" rel="noreferrer">
+          tamacares.com
+        </a>
+        .
+      </p>
     </>
   );
 
   const items = [one, two, three, four];
 
   const handleScrollDown = () => {
-    const workSection = document.getElementById('work-section');
-    if (workSection) {
+    if (workSectionRef.current) {
       window.scrollTo({
-        top: workSection.offsetTop,
+        top: workSectionRef.current.offsetTop,
         behavior: 'smooth',
       });
       setShowScrollButton(false);
