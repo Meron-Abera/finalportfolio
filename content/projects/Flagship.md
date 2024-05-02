@@ -1,13 +1,14 @@
 ---
-date: '2018-10-01'
-title: 'Flagship Pioneering'
-github: ''
-external: 'https://www.flagshippioneering.com/'
+date: '2023-11-12'
+title: 'Sports Center Recommendation for Buenos Aires'
+github: 'https://github.com/Nathnaelc/CS152_expert_system'
+external: ''
 tech:
-  - Craft CMS
-  - Chart.js
-company: 'Upstatement'
-showInProjects: false
+  - Spacy
+  - Python
+  - Prolog
+company: 'Minerva'
+showInProjects: true
 ---
 
-A marketing site for an ambitious life sciences venture capital company.
+A Expert System that recommends sports centers in Buenos Aires based on the user's preferences. The system uses Spacy to extract the user's preferences and Prolog to recommend the best sports centers.

@@ -1,15 +1,12 @@
 ---
-date: '2015-12-01'
-title: 'One Card For All'
+date: '2022-09-25'
+title: 'Technical Interview Prep Resources'
 github: ''
-external: 'https://us.mullenlowe.com/work/one-card-for-all/'
+external: 'https://coda.io/@nathe/cs-interview-preparation-mu'
 tech:
-  - HTML
-  - SCSS
-  - JS
-  - jQuery
-company: 'MullenLowe'
-showInProjects: false
+  - Coda.io
+company: 'Minerva'
+showInProjects: true
 ---
 
-Interactive holiday site for MullenLowe built around an algorithm that generated a holiday greeting to each and every person on the planet. Check out this short [video](https://us.mullenlowe.com/work/one-card-for-all/) describing the project.
+Interactive website for Computer Science students who are searching for internship opportunities and preparing for technical interviews effectively. It helps them being an organized hub for all they need to prepare for life-changing opportunities.
