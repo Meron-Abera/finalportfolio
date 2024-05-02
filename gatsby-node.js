@@ -101,10 +101,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@utils': path.resolve(__dirname, 'src/utils'),
       },
-      fallback: {
-        fs: false,
-        path: false,
-      },
     },
   });
 };
