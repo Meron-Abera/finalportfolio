@@ -46,14 +46,16 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
   .scroll-down-button {
     background-color: transparent;
     color: var(--slate);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+    margin-top: 100px;
 
     &:hover {
       transform: translateY(5px);
@@ -61,8 +63,8 @@ const StyledHeroSection = styled.section`
 
     svg {
       margin-right: 0;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       animation: bounce 2s infinite;
     }
   }
@@ -83,7 +85,6 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
-
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(true);

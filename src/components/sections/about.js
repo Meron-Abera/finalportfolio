@@ -134,7 +134,7 @@ const About = () => {
     'Next Js',
     'Node Js',
     'Express Js',
-    'SQL/PostgresSQL',
+    'SQL/PostgreSQL',
     'AWS',
     'Git',
     'Github',

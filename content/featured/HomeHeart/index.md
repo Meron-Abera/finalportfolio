@@ -9,7 +9,7 @@ tech:
   - Vite React.js
   - Express.js
   - Node.js
-  - PostgresSQL
+  - PostgreSQL
 ---
 
 I've observed many immigrants and international students grappling with mental health challenges, from depression to homesickness and culture shocks. Given the high costs of mental health care—up to $250 per hour or approximately $10,086 annually—it's often unaffordable for them. Additionally, language and cultural barriers exacerbate these challenges.
