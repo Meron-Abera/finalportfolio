@@ -5,7 +5,7 @@ module.exports = {
     title: 'Nathnael Mekonnen',
     description:
       'Nathnael Mekonnen is a software engineer who builds software to change ideas to reality with exceptional digital experiences.',
-    siteUrl: 'https:nathe.vercel.app', // No trailing slash allowed!
+    siteUrl: 'https://nathe.vercel.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
