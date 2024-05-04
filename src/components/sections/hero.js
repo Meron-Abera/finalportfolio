@@ -88,7 +88,7 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const [showScrollButton, setShowScrollButton] = useState(true);
+  const [showScrollButton, setShowScrollButton] = useState(false); // Set initial value to false
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -117,6 +117,9 @@ const Hero = () => {
         </a>
         .
       </p>
+      <a className="email-link" target="_top" href="mailto:nathnaelc@uni.minerva.edu">
+        Say Hi
+      </a>
     </>
   );
 
@@ -126,9 +129,14 @@ const Hero = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setShowScrollButton(false);
+      setShowScrollButton(true);
     }
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setShowScrollButton(true), 1000);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <StyledHeroSection>

@@ -13,12 +13,12 @@ const IconLogo = () => (
     <polygon points="47,0 0,50 47,50" stroke="#8d99ae" />
     <polygon points="53,0 100,0 53,50" stroke="#8d99ae" />
     {/* Colored edges to form 'N' */}
-    <line x1="47" y1="0" x2="47" y2="50" stroke="#FFCAAD" strokeWidth="2" />{' '}
+    <line x1="47" y1="0" x2="47" y2="50" stroke="#FF7C5C" strokeWidth="2" />{' '}
     {/* Left inner vertical */}
-    <line x1="47" y1="0" x2="0" y2="50" stroke="#FFCAAD" strokeWidth="2" /> {/* Left hypotenuse */}
-    <line x1="53" y1="0" x2="53" y2="50" stroke="#FFCAAD" strokeWidth="2" />{' '}
+    <line x1="47" y1="0" x2="0" y2="50" stroke="#FF7C5C" strokeWidth="2" /> {/* Left hypotenuse */}
+    <line x1="53" y1="0" x2="53" y2="50" stroke="#FF7C5C" strokeWidth="2" />{' '}
     {/* Right inner vertical */}
-    <line x1="53" y1="50" x2="100" y2="0" stroke="#FFCAAD" strokeWidth="2" />{' '}
+    <line x1="53" y1="50" x2="100" y2="0" stroke="#FF7C5C" strokeWidth="2" />{' '}
     {/* Right hypotenuse */}
   </svg>
 );
