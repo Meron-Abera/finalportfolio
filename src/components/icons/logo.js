@@ -6,12 +6,12 @@ const IconLogo = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 50"
     fill="none"
-    stroke="currentColor"
+    stroke="#8d99ae"
     strokeWidth="2">
     <title>Logo</title>
     {/* Base Triangles */}
-    <polygon points="47,0 0,50 47,50" stroke="currentColor" />
-    <polygon points="53,0 100,0 53,50" stroke="currentColor" />
+    <polygon points="47,0 0,50 47,50" stroke="#8d99ae" />
+    <polygon points="53,0 100,0 53,50" stroke="#8d99ae" />
     {/* Colored edges to form 'N' */}
     <line x1="47" y1="0" x2="47" y2="50" stroke="#FFCAAD" strokeWidth="2" />{' '}
     {/* Left inner vertical */}

@@ -14,10 +14,10 @@ const IconLoader = () => (
     <polygon id="right-triangle-base" points="53,0 100,0 53,50" stroke="currentColor" />
 
     {/* Colored Edges to form 'N' */}
-    <line id="left-vertical" x1="47" y1="0" x2="47" y2="50" stroke="#FFCAAD" strokeWidth="2" />
-    <line id="left-hypotenuse" x1="47" y1="0" x2="0" y2="50" stroke="#FFCAAD" strokeWidth="2" />
-    <line id="right-vertical" x1="53" y1="0" x2="53" y2="50" stroke="#FFCAAD" strokeWidth="2" />
-    <line id="right-hypotenuse" x1="53" y1="50" x2="100" y2="0" stroke="#FFCAAD" strokeWidth="2" />
+    <line id="left-vertical" x1="47" y1="0" x2="47" y2="50" stroke="#FF7C5C" strokeWidth="2" />
+    <line id="left-hypotenuse" x1="47" y1="0" x2="0" y2="50" stroke="#FF7C5C" strokeWidth="2" />
+    <line id="right-vertical" x1="53" y1="0" x2="53" y2="50" stroke="#FF7C5C" strokeWidth="2" />
+    <line id="right-hypotenuse" x1="53" y1="50" x2="100" y2="0" stroke="#FF7C5C" strokeWidth="2" />
   </svg>
 );
 
