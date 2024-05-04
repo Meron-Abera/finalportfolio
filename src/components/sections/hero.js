@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -85,11 +85,11 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const workSectionRef = useRef(null);
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -123,11 +123,9 @@ const Hero = () => {
   const items = [one, two, three, four];
 
   const handleScrollDown = () => {
-    if (workSectionRef.current) {
-      window.scrollTo({
-        top: workSectionRef.current.offsetTop,
-        behavior: 'smooth',
-      });
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setShowScrollButton(false);
     }
   };

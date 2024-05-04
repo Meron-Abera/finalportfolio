@@ -7,7 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: #28262b;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -59,7 +59,7 @@ const StyledNav = styled.nav`
   width: 100%;
   color: var(--lightest-slate);
   font-family: var(--font-mono);
-  counter-reset: item 0;
+  // counter-reset: item 0;
   z-index: 12;
 
   .logo {
@@ -122,22 +122,40 @@ const StyledLinks = styled.div`
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: var(--font-sans); /* Using the modern sans-serif font */
 
     li {
-      margin: 0 5px;
+      margin: 0 10px; /* Increased margin for better spacing */
       position: relative;
-      counter-increment: item 1;
-      font-size: var(--fz-xs);
+      font-size: var(--fz-md);
 
       a {
         padding: 10px;
+        display: block; /* Ensures the padding and effects apply to the whole link area */
+        position: relative; /* For the pseudo-elements */
+        color: var(--lightest-slate); /* Default text color */
+        transition: color 0.3s ease; /* Smooth transition for color change */
 
-        &:before {
-          content: '0' counter(item) '.';
-          margin-right: 5px;
-          color: var(--green);
-          font-size: var(--fz-xxs);
-          text-align: right;
+        &::after {
+          /* Creates an underline effect only when hovered */
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -5px; /* Positioning the line a bit below the text */
+          left: 50%;
+          background-color: var(--green); /* Use a theme color that matches */
+          transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        &:hover,
+        &:focus {
+          color: var(--green); /* Changes text color on hover */
+
+          &::after {
+            width: 100%; /* Full width on hover */
+            left: 0; /* Align from the left */
+          }
         }
       }
     }
@@ -145,8 +163,8 @@ const StyledLinks = styled.div`
 
   .resume-button {
     ${({ theme }) => theme.mixins.smallButton};
-    margin-left: 15px;
-    font-size: var(--fz-xs);
+    margin-left: 20px; /* Space before the resume button */
+    font-size: var(--fz-md);
   }
 `;
 
@@ -185,18 +203,12 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
