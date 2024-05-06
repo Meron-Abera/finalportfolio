@@ -7,7 +7,7 @@ module.exports = {
       'Nathnael Mekonnen is a software engineer who builds software to change ideas to reality with exceptional digital experiences.',
     siteUrl: 'https://www.nathnael.net', // No trailing slash allowed!
     image: '/og.png',
-    twitterUsername: '',
+    linkedinUsername: 'https://www.linkedin.com/in/nathanseasn/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
