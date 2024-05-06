@@ -13,10 +13,11 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
   height: 100vh;
   padding: 0;
+  padding-top: var(--nav-height); // Ensure padding to account for nav height
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
     height: auto;
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height) + 20px); // Add extra padding for smaller screens
   }
 
   h1 {
@@ -55,7 +56,7 @@ const StyledHeroSection = styled.section`
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
-    margin-top: 200px;
+    margin-top: 50px; // Reduced margin to adjust positioning
 
     &:hover {
       transform: translateY(5px);
@@ -88,14 +89,13 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const [showScrollButton, setShowScrollButton] = useState(false); // Set initial value to false
+  const [showScrollButton, setShowScrollButton] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
     }
-
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
@@ -129,14 +129,9 @@ const Hero = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setShowScrollButton(true);
+      setShowScrollButton(false);
     }
   };
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setShowScrollButton(true), 1000);
-    return () => clearTimeout(timeout);
-  }, []);
 
   return (
     <StyledHeroSection>
