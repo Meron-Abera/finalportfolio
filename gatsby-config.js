@@ -163,5 +163,39 @@ module.exports = {
         trackingId: 'G-E3HGJCS90Y',
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => ({
+            url: site.siteMetadata.siteUrl + node.path,
+            changefreq: 'daily',
+            priority: 0.7,
+          })),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+        sitemap: 'https://www.nathnael.net/sitemap.xml',
+        host: 'https://www.nathnael.net',
+      },
+    },
   ],
 };
