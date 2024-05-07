@@ -48,11 +48,11 @@ const Head = ({ title, description, image }) => {
       <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={linkedinUsername} />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
+      <meta name="linkedin:card" content="summary_large_image" />
+      <meta name="linkedin:creator" content={linkedinUsername} />
+      <meta name="linkedin:title" content={seo.title} />
+      <meta name="linkedin:description" content={seo.description} />
+      <meta name="linkedin:image" content={seo.image} />
 
       <meta name="google-site-verification" content="MpTYM7_me2la7jB2pt26AAitzPfBb2qcKhg0XWboIAA" />
     </Helmet>
