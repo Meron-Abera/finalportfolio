@@ -33,7 +33,7 @@ module.exports = {
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
-        display: 'inimal-ui',
+        display: 'minimal-ui',
         icon: 'rc/images/logo.png',
       },
     },
