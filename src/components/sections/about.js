@@ -157,7 +157,7 @@ const About = () => {
 
             <p>
               Currently I'm a senior at the most innovative university by{' '}
-              <a href="https://www.wuri.world/2023-global-top-100">WURI</a> 2023{' '}
+              <a href="https://www.wuri.world/2023-global-top-100">WURI</a> 2022-2024{' '}
               <a href="https://www.minerva.edu/">- Minerva University</a> where I am studying
               Computer Science concentrating on Software Engineering and Applied Data Science. I
               also work as a Software Engineer intern at the <strong>#1 CRM platform </strong>{' '}
@@ -165,8 +165,8 @@ const About = () => {
                 <strong>Salesforce</strong>
               </a>{' '}
               and as a Full Stack Developer at <a href="https://www.tamacares.com/"> TamaCares</a>{' '}
-              where I am responsible for developing and maintaining the company's web application
-              from scratch.
+              where I am responsible for developing the business logic and sofware along with
+              maintaining. from scratch.
             </p>
             <p>The technologies I’ve used and learned in recent projects</p>
           </div>
