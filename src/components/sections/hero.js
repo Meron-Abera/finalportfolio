@@ -110,7 +110,7 @@ const Hero = () => {
         <a href="https://www.salesforce.com" target="_blank" rel="noreferrer">
           Salesforce
         </a>{' '}
-        as a Software Engineering Intern and I am also a lead developer at{' '}
+        as a Software Engineering Intern, and I am also a lead developer at{' '}
         <strong>TamaCares</strong> building{' '}
         <a href="https://www.tamacares.com" target="_blank" rel="noreferrer">
           tamacares.com

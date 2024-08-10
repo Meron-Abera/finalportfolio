@@ -1,6 +1,6 @@
 ---
-date: '2024-05-20'
-title: 'Software Enginnering Intern (Rising Junior)'
+date: '2023-06-05'
+title: 'Software Enginnering Intern'
 company: 'Salesforce'
 location: 'San Francisco, CA'
 range: 'May 2024 - August 2024'

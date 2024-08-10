@@ -1,10 +1,10 @@
 ---
-date: '2024-09-02'
+date: '2023-02-02'
 title: 'Coach and Talent Development - Technical Interview Prep'
 company: 'Minerva University'
 location: 'San Francisco, CA and London, UK'
-range: 'Spetember 2023 - April 2024'
-url: 'https://minerva.edu/'
+range: 'September 2023 - April 2024'
+url: 'https://www.minerva.edu/'
 ---
 
 - Mentored more than <strong>30</strong> Computer Science students to master technical interviews in the field of Software Enginerring.
