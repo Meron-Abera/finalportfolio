@@ -127,17 +127,21 @@ const About = () => {
 
   const skills = [
     'Python',
+    'Java',
+    'Spring Boot',
     'Flask',
     'JavaScript (ES6+)',
     'TypeScript',
     'React Js',
     'Next Js',
-    'Node Js',
+    'Node.Js',
     'Express Js',
     'SQL/PostgreSQL',
     'AWS',
-    'Git',
-    'Github',
+    'Git/Github',
+    'Aura',
+    'Salesforce',
+    'LWC',
   ];
 
   return (
