@@ -1,13 +1,13 @@
 // gatsby.config.js
-// const config = require('./src/config');
+const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Nathnael Mekonnen',
+    title: 'Nathnael Mekonnen (Nathe)',
     description:
-      'Nathnael Mekonnen is a software engineer who builds software to change ideas to reality with exceptional digital experiences.',
+      'Nathnael Mekonnen is a software engineer with robust foundation and experiences who designs and builds software to turn ideas into reality with exceptional digital experiences.',
     siteUrl: 'https://www.nathnael.net', // No trailing slash allowed!
-    image: '/og.png',
+    image: '/favicon-32x32.png',
     linkedinUsername: 'https://www.linkedin.com/in/nathanseasn/',
   },
   plugins: [
@@ -31,8 +31,8 @@ module.exports = {
         name: 'Nathnael Mekonnen',
         short_name: 'Nathe',
         start_url: '/',
-        // background_color: config.colors.darkNavy,
-        // theme_color: config.colors.navy,
+        background_color: config.colors.brown,
+        theme_color: config.colors.navy,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
