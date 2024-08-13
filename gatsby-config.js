@@ -23,20 +23,20 @@ module.exports = {
       },
     },
 
-    // // Metadata
-    // `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: 'Nathnael Mekonnen',
-    //     short_name: 'Nathe',
-    //     start_url: '/',
-    //     background_color: config.colors.darkNavy,
-    //     theme_color: config.colors.navy,
-    //     display: 'minimal-ui',
-    //     // icon: 'v4/src/images/logo.png',
-    //   },
-    // },
+    // Metadata
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Nathnael Mekonnen',
+        short_name: 'Nathe',
+        start_url: '/',
+        // background_color: config.colors.darkNavy,
+        // theme_color: config.colors.navy,
+        display: 'minimal-ui',
+        icon: 'src/images/logo.png',
+      },
+    },
 
     // SEO
     {

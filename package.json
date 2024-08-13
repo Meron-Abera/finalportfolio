@@ -1,8 +1,8 @@
 {
   "name": "v4",
-  "description": "Personal Website V4",
+  "description": "Nathe's portfolio",
   "version": "1.0.0",
-  "author": "Nathnael Mekonnen <brittany.chiang@gmail.com>",
+  "author": "Nathnael Mekonnen <nathanseas@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/nathnaelc/my_portfolio_web"
