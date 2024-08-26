@@ -132,10 +132,10 @@ const About = () => {
     'Flask',
     'JavaScript (ES6+)',
     'TypeScript',
-    'React Js',
-    'Next Js',
-    'Node.Js',
-    'Express Js',
+    'React.js',
+    'Next.js',
+    'Node.js',
+    'Express.js',
     'SQL/PostgreSQL',
     'AWS',
     'Git/Github',
@@ -169,8 +169,8 @@ const About = () => {
                 <strong>Salesforce</strong>
               </a>{' '}
               and as a Full Stack Developer at <a href="https://www.tamacares.com/"> TamaCares</a>{' '}
-              where I am responsible for developing the business logic and sofware along with
-              maintaining. from scratch.
+              where I am responsible for developing the business logic and sofware from scratch
+              along with maintaining it.
             </p>
             <p>The technologies I’ve used and learned in recent projects</p>
           </div>
