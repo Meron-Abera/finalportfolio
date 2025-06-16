@@ -101,23 +101,26 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hello, this is</h1>;
-  const two = <h2 className="big-heading">Nathnael Mekonnen.</h2>;
+  const two = <h2 className="big-heading">Meron Shibiru.</h2>;
   const three = <h3 className="big-heading">I design and develop Software</h3>;
   const four = (
     <>
       <p>
-        I design and program software solutions to bring ideas to reality. Currently, I work at{' '}
-        <a href="https://www.salesforce.com" target="_blank" rel="noreferrer">
-          Salesforce
+        I design and program software solutions to bring ideas to reality. I recently worked at{' '}
+        <a href="https://www.huawei.com" target="_blank" rel="noreferrer">
+          Huawei
         </a>{' '}
         as a Software Engineering Intern, and I am also a lead developer at{' '}
         <strong>TamaCares</strong> building{' '}
         <a href="https://www.tamacares.com" target="_blank" rel="noreferrer">
           tamacares.com
         </a>
-        .
+        . I have taken multiple contracts and projects for clients and companies in Europe and
+        America to deliver efficient and scalable software solutions that translates their business
+        needs into functional applications. Feel free to say hi to learn more or want to work
+        together!
       </p>
-      <a className="email-link" target="_top" href="mailto:nathnaelc@uni.minerva.edu">
+      <a className="email-link" target="_top" href="mailto:meronabera2121@gmail.com">
         Say Hi
       </a>
     </>

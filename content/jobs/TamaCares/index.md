@@ -1,12 +1,12 @@
 ---
-date: '2023-12-21'
+date: '2025-06-01'
 title: 'Developer and Consultant'
 company: 'TamaCares'
-location: 'Washington, DC'
+location: 'Remote'
 range: 'August 2023 - Present'
 url: 'https://www.tamacares.com'
 ---
 
-- Developed the full-stack web application for the business using NEXT.js(React Js), Node Js, Express Js, PostgreSQL, AWS, Stripe, and Prsima tools and frameworks
-- Developed the company's business logic and its UI/UX for the main platform tamacares.com
-- Developed Terms of Agreement, User Policy, logo, content with analysis of target audience, and marketing strategies for the company
+- **Designed and implemented** the full system architecture, business logic, and front-end experience of [tamacares.com](https://www.tamacares.com)—a healthcare platform supporting international users in the U.S.
+- **Built** the application using a modern stack: **Next.js**, **Node.js**, **Express.js**, **PostgreSQL**, **Prisma**, **Stripe**, and **AWS**. Emphasis was placed on _performance, accessibility, and secure data flow_.
+- **Developed** foundational assets such as the **Terms of Agreement**, **Privacy Policy**, visual branding, and key content—guided by _user research_ and _audience analysis_ to align with the platform’s mission and growth goals.

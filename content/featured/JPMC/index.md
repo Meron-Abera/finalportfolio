@@ -1,16 +1,16 @@
 ---
 date: '3'
-title: 'JPMC RealTime Trade Visualizer'
+title: 'Scan2Mark'
 cover: './Forage_screenshot.png'
-github: 'https://github.com/Nathnaelc/JPMC-task-3-by-NM'
-external: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_wSmT7jZCaZTHxRSYA_1669348687658_completion_certificate.pdf'
+github: 'https://github.com/Final-project-year5/Frontends'
+external: ''
 tech:
   - React.js
-  - Node.js
-  - Perspective
+  - Django
   - Python
-  - Puppeteer
+  - CNN
 ---
 
-I Fixed broken files in the repository to make web application output correctly.
-I Used JPMorgan Chase’s open source library called Perspective to generate a live graph that displays a data feed in a clear and visually appealing way for traders to monitor.
+Developed an intelligent attendance tracking solution using Convolutional Neural Networks (CNN) for image-based facial recognition, backed by Django for secure and scalable backend operations. The system features a React.js frontend for a dynamic and user-friendly experience.
+
+This project automated the traditional attendance process, significantly increasing accuracy and reducing human error and cheating in educational settings. Designed to be both scalable and intuitive, it showcases a practical application of AI in assisting real-world institutional workflows.

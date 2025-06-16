@@ -18,7 +18,15 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
+  p {
+    strong {
+      color: var(--green);
+      font-weight: 600;
+    }
+  }
+
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -46,6 +54,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -127,21 +136,19 @@ const About = () => {
 
   const skills = [
     'Python',
-    'Java',
-    'Spring Boot',
-    'Flask',
+    'Django',
     'JavaScript (ES6+)',
-    'TypeScript',
     'React.js',
     'Next.js',
     'Node.js',
-    'Express.js',
-    'SQL/PostgreSQL',
-    'AWS',
-    'Git/Github',
-    'Aura',
-    'Salesforce',
-    'LWC',
+    'Laravel',
+    'PHP',
+    'SQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Flutter',
+    'Git',
+    'GitHub',
   ];
 
   return (
@@ -152,27 +159,28 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi there! I am Nathnael (Nathe). I am a computer science student who likes to solve
-              problems in real-life. Since I joined high school in 2015, I started to learn
-              programming, and I worked on different projects from hybrid designs at earlier stages
-              to full-stack web applications, machine learning pipelines, and data analytics
-              projects.
+              Hi there! I'm <strong>Meron Shibiru</strong>, a Software Engineering graduate with a
+              passion for building meaningful and inclusive technology. I started programming during
+              high school and quickly became interested in how software can improve lives — from
+              healthcare to education to public service.
             </p>
 
             <p>
-              Currently I'm a senior at the most innovative university by{' '}
-              <a href="https://www.wuri.world/2023-global-top-100">WURI</a> 2022-2024{' '}
-              <a href="https://www.minerva.edu/">- Minerva University</a> where I am studying
-              Computer Science concentrating on Software Engineering and Applied Data Science. I
-              also work as a Software Engineer intern at the <strong>#1 CRM platform </strong>{' '}
-              <a href="https://www.salesforce.com">
-                <strong>Salesforce</strong>
-              </a>{' '}
-              and as a Full Stack Developer at <a href="https://www.tamacares.com/"> TamaCares</a>{' '}
-              where I am responsible for developing the business logic and sofware from scratch
-              along with maintaining it.
+              I recently completed my <strong>B.Sc. in Software Engineering</strong> at{' '}
+              <strong>Addis Ababa Science and Technology University</strong>, where I focused on
+              topics like artificial intelligence, distributed systems, and system design. During my
+              time there, I served as a <strong>Teaching Assistant</strong> and mentored students
+              through the <strong>Google Developer Clubs (GDC)</strong>.
             </p>
-            <p>The technologies I’ve used and learned in recent projects</p>
+
+            <p>
+              My academic achievement was recognized by the <strong>Ministry of Education</strong>{' '}
+              and the <strong>Ministry of Women, Children, and Social Affairs</strong>.
+            </p>
+
+            <p>
+              I'm always eager to learn, collaborate, and build technology that empowers others.
+            </p>
           </div>
 
           <ul className="skills-list">
@@ -184,7 +192,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/nathnael.net.jpg"
+              src="../../images/meron.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP']}

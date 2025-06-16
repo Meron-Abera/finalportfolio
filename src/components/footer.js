@@ -102,7 +102,7 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <div>Designed &amp; Built by Nathnael Mekonnen. Based on Brittany Chiang's template.</div>
+        <div>Designed &amp; Built by Meron Shibiru. Based on Brittany Chiang's template.</div>
         {githubInfo.commits && (
           <div className="github-stats">
             <span>
@@ -111,7 +111,7 @@ const Footer = () => {
             </span>
           </div>
         )}
-        <div>&copy; {currentYear} Nathnael Mekonnen. All rights reserved.</div>
+        <div>&copy; {currentYear} Meron Shibiru. All rights reserved.</div>
       </StyledCredit>
     </StyledFooter>
   );

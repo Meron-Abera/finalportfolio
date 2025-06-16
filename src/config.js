@@ -1,22 +1,18 @@
 module.exports = {
-  email: 'nathnaelc@uni.minerva.edu',
+  email: 'meronabera2121@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/nathnaelc',
+      url: 'https://github.com/Meron-Abera',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/nathseasn/',
+      url: 'https://www.instagram.com/merak3ra/',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/nathanseasn/',
-    },
-    {
-      name: 'Facebook',
-      url: 'https://facebook.com/nathnael.seas',
+      url: 'https://www.linkedin.com/in/meron-shibru-589b82224/',
     },
   ],
 
@@ -41,8 +37,8 @@ module.exports = {
 
   colors: {
     green: '#619B8A',
-    navy: '#323036',
-    brown: '#323036',
+    navy: '#424861',
+    brown: '#424861',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({
