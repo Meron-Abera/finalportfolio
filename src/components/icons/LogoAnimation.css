@@ -1,40 +1,31 @@
-/* LogoAnimation.css */
-@keyframes slideInFromTopRight {
-  from {
-    transform: translate(50px, -50px);
+.icon-loader {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  stroke-linecap: round; /* Makes the lines' ends rounded */
+  stroke-linejoin: round; /* Makes the lines' joins rounded */
+  animation: draw 2s ease-in-out; /* Smooth transition animation */
+}
+
+.line {
+  stroke-dasharray: 150; /* Length of dashes for drawing effect */
+  stroke-dashoffset: 100; /* Initial offset for line drawing */
+  animation: draw-line 2s ease-in-out forwards, color-change 2s ease-in-out infinite; /* Combined animations for line drawing and color change */
+}
+
+@keyframes draw {
+  0% {
     opacity: 0;
   }
-  to {
-    transform: translate(0, 0);
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes slideInFromTopLeft {
+@keyframes draw-line {
   from {
-    transform: translate(-50px, -50px);
-    opacity: 0;
+    stroke-dashoffset: 100;
   }
   to {
-    transform: translate(0, 0);
-    opacity: 1;
+    stroke-dashoffset: 0;
   }
-}
-
-#left-triangle-base,
-#left-vertical,
-#left-hypotenuse {
-  animation: slideInFromTopLeft 1s ease-out forwards;
-}
-
-#right-triangle-base,
-#right-vertical,
-#right-hypotenuse {
-  animation: slideInFromTopRight 1s ease-out forwards;
-}
-
-svg {
-  overflow: visible;
-  width: 100px;
-  height: 50px;
 }

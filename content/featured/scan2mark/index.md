@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Scan2Mark'
-cover: './Forage_screenshot.png'
+cover: './proj.png'
 github: 'https://github.com/Final-project-year5/Frontends'
 external: ''
 tech:

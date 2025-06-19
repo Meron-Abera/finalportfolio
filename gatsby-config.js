@@ -3,12 +3,12 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Nathnael Mekonnen (Nathe)',
+    title: 'Meron Shibiru',
     description:
       'Nathnael Mekonnen is a software engineer with robust foundation and experiences who designs and builds software to turn ideas into reality with exceptional digital experiences.',
     siteUrl: 'https://www.nathnael.net', // No trailing slash allowed!
     image: '/favicon-32x32.png',
-    linkedinUsername: 'https://www.linkedin.com/in/nathanseasn/',
+    linkedinUsername: 'https://et.linkedin.com/in/meron-shibru-589b82224',
   },
   plugins: [
     // Images
@@ -28,13 +28,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Nathnael Mekonnen',
-        short_name: 'Nathe',
+        name: 'Meron Shibiru',
+        short_name: 'Mera',
         start_url: '/',
         background_color: config.colors.brown,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
-        icon: 'src/images/logo.png',
+        icon: 'src/images/logo1.png',
       },
     },
 

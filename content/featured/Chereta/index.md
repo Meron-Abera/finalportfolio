@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Chereta.net'
-cover: './Forage_screenshot.png'
+cover: './mss.png'
 github: 'https://admin.cheretanet.com/login'
 external: 'https://admin.cheretanet.com/login'
 tech:

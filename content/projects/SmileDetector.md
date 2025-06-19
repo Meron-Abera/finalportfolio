@@ -1,14 +1,10 @@
 ---
 date: '2022-05-27'
-title: 'Smile Detector Snapshot'
-github: 'https://github.com/Nathnaelc/Cisco-Academy-Big-Data-and-ML'
-external: ''
+title: 'Water-based air purifier'
 tech:
-  - OpenCV
-  - Python
-  - Raspberry PI
-company: 'Cisco'
+  - C
+company: ''
 showInProjects: true
 ---
 
-Built a machine learning model that uses OpenCV, picamera, numpy, sklearn, matplotlib libraries and takes a snapshot when it detects smile from a face.
+The prototype air purifier reduces PM2.5 levels by 30%, featuring advanced filtration technology. It includes a smartphone app for remote control and real-time monitoring, enabling users to track air quality and adjust settings conveniently. The device combines high-performance air purification with user-friendly controls to ensure optimal air quality management.

@@ -2,24 +2,28 @@ import React from 'react';
 
 const IconLogo = () => (
   <svg
-    id="logo"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 100 50"
+    viewBox="0 0 110 110"
+    className="icon-loader"
     fill="none"
-    stroke="#8d99ae"
-    strokeWidth="2">
-    <title>Logo</title>
-    {/* Base Triangles */}
-    <polygon points="47,0 0,50 47,50" stroke="#8d99ae" />
-    <polygon points="53,0 100,0 53,50" stroke="#8d99ae" />
-    {/* Colored edges to form 'N' */}
-    <line x1="47" y1="0" x2="47" y2="50" stroke="#FF7C5C" strokeWidth="2" />{' '}
-    {/* Left inner vertical */}
-    <line x1="47" y1="0" x2="0" y2="50" stroke="#FF7C5C" strokeWidth="2" /> {/* Left hypotenuse */}
-    <line x1="53" y1="0" x2="53" y2="50" stroke="#FF7C5C" strokeWidth="2" />{' '}
-    {/* Right inner vertical */}
-    <line x1="53" y1="50" x2="100" y2="0" stroke="#FF7C5C" strokeWidth="2" />{' '}
-    {/* Right hypotenuse */}
+    stroke="#00BFFF"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{
+      position: 'absolute', // Make it positionable
+      top: '0', // Position at the top
+      left: '0', // Position at the left (optional)
+      zIndex: 999, // Ensure it appears on top of other elements
+      width: '80px', // Adjust width
+      height: '80px', // Adjust height
+    }}>
+    <line stroke="#457b9d" className="line" x1="10" y1="90" x2="90" y2="10" />
+    <line stroke="#ea698b" className="line" x1="10" y1="10" x2="45" y2="50" />
+    <line stroke="#ea698b" className="line" x1="90" y1="90" x2="45" y2="92" />
+    <line stroke="#ea698b" className="line" x1="45" y1="90" x2="90" y2="45" />
+    <line stroke="#ea698b" className="line" x1="10" y1="10" x2="10" y2="90" />
+    <line stroke="#ea698b" className="line" x1="90" y1="10" x2="90" y2="90" />
   </svg>
 );
 

@@ -2,19 +2,19 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #323036;
+    --dark-navy: #000;
     --navy: #1e1d20;
     --light-navy: #65606c;
     --lightest-navy: #323036;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
-    --dark-slate: #495670;
+    --navy-shadow: rgba(64, 64, 64, 1);
+    --dark-slate: #d0d1ff;
     --slate: #8892b0;
     --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
+    --lightest-slate: #f1e6f7;
     --white: #e6f1ff;
-    --green: #ffb4a2;
+    --green: #e5b3fe;
     --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #995c68;
+    --pink: #ff99ac;
     --blue: #57cbff;
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,

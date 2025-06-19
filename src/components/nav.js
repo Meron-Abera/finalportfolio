@@ -220,7 +220,7 @@ const Nav = ({ isHome }) => {
   const ResumeLink = (
     <a
       className="resume-button"
-      href="/Nathnael_Mekonnen_Resume.pdf"
+      href="/Meron_Abera_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer">
       Resume
