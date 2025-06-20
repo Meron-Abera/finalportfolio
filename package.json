@@ -1,11 +1,11 @@
 {
   "name": "v4",
-  "description": "Nathe's portfolio",
+  "description": "Meron's portfolio",
   "version": "1.0.0",
-  "author": "Nathnael Mekonnen <nathanseas@gmail.com>",
+  "author": "Meron Shibiru <meronabera2121@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathnaelc/my_portfolio_web"
+    "url": "https://github.com/Meron-Abera/finalportfolio"
   },
   "keywords": [
     "gatsby"

@@ -5,8 +5,8 @@ module.exports = {
   siteMetadata: {
     title: 'Meron Shibiru',
     description:
-      'Nathnael Mekonnen is a software engineer with robust foundation and experiences who designs and builds software to turn ideas into reality with exceptional digital experiences.',
-    siteUrl: 'https://www.nathnael.net', // No trailing slash allowed!
+      'Meron Shibiru is a software engineer with a strong technical background, focused on building reliable, maintainable software.',
+    siteUrl: 'https://meronshibiru.vercel.app', // No trailing slash allowed!
     image: '/favicon-32x32.png',
     linkedinUsername: 'https://et.linkedin.com/in/meron-shibru-589b82224',
   },
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://www.nathnael.net',
-        sitemap: 'https://www.nathnael.net/sitemap.xml',
+        host: 'https://meronshibiru.vercel.app',
+        sitemap: 'https://meronshibiru.vercel.app/sitemap.xml',
         policy: [{ userAgent: '*', disallow: [] }],
       },
     },
