@@ -165,8 +165,12 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer with experience in full-stack development and technical mentorship.
-        I focus on building reliable, practical software that solves real problems.
+         I’m a software engineer with experience in full-stack development and technical mentorship.
+        I focus on building reliable, practical software that solves real problems. I am also
+        co-founder of a rapidly growing software startup, I lead the engineering team and oversee
+        client relationships. To date, we have secured multiple contracts and successfully completed
+        and delivered four projects for international clients, with additional engagements currently
+        in progress.
       </p>
       <div className="cta-group">
         <a
