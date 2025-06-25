@@ -75,7 +75,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://github-contributions-api.jogruber.de/Nathnaelc?y=2023,2024')
+    fetch('https://github-contributions-api.jogruber.de/Meron-Abera?y=2023,2024')
       .then(response => response.json())
       .then(json => {
         const commits = json.all.reduce((acc, curr) => acc + curr, 0); // Sum all weekly commits
