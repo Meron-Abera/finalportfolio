@@ -1,9 +1,9 @@
 ---
 date: '2024-09-01'
 title: 'Volunteer Software Engineer at 3D Girls, Inc.'
-company: 'Hex Labs'
+company: 'Develop For Good'
 location: 'Addis Ababa, Ethiopia'
-range: 'Sep 2024 - Apr 2025'
+range: 'Oct 2024 - Feb 2025'
 url: 'https://www.3dgirlsinc.org/'
 ---
 
