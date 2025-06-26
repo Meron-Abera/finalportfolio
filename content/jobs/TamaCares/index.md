@@ -3,7 +3,7 @@ date: '2025-06-01'
 title: 'Developer and Consultant'
 company: 'TamaCares'
 location: 'Remote'
-range: 'August 2023 - Present'
+range: 'October 2023 - April 2025'
 url: 'https://www.tamacares.com'
 ---
 
