@@ -85,7 +85,7 @@ const achievements = [
   },
   {
     title:
-      'Academic Recognition – Ethiopian Ministries of Education & Addis Ababa City Government of Women, Children, and Social Affairs',
+      'Academic Recognition – Addis Ababa City Government Bureau of Women, Children & Social Affairs',
     date: '2024',
     description: 'Recognized for high academic performance.',
   },
