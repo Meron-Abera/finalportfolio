@@ -3,7 +3,7 @@ date: '2024-06-01'
 title: 'Software Engineering and site reliability'
 company: 'Huawei Technologies in Ethiopia'
 location: 'Addis Ababa, Ethiopia'
-range: 'June - December 2024'
+range: 'June - September 2024'
 url: 'https://huawei.com/'
 ---
 
